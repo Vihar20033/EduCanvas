@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Learning Environment Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>🎓 Learning Environment Builder</h1>
+    <p>Build interactive educational modules by dragging components below</p>
+  </header>
+
+  <!-- Main Area -->
+  <main class="main-container">
+
+    <!-- Toolbox -->
+    <div class="toolbox">
+      <h2>Educational Components</h2>
+      <!-- Components will be added by JavaScript -->
+    </div>
+
+    <!-- Drop Boxes -->
+    <div class="drop-zone-container">
+      <div class="container" id="left">
+        <h2>Module Start</h2>
+        <!-- Components will be dropped here -->
+      </div>
+      <div class="container" id="right">
+        <h2>Module End</h2>
+        <!-- Components will be dropped here -->
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chat-container">
+      <div class="chat-header">💬 Educational Assistant</div>
+      <div class="chat-box" id="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Ask for help or suggestions..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
